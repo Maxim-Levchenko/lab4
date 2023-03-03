@@ -1,0 +1,8 @@
+C:\Users\Максим\source\repos\copyfileslab4\copyfileslab4\bin\Debug\copyfileslab4.exe.config
+C:\Users\Максим\source\repos\copyfileslab4\copyfileslab4\bin\Debug\copyfileslab4.exe
+C:\Users\Максим\source\repos\copyfileslab4\copyfileslab4\bin\Debug\copyfileslab4.pdb
+C:\Users\Максим\source\repos\copyfileslab4\copyfileslab4\obj\Debug\copyfileslab4.csproj.AssemblyReference.cache
+C:\Users\Максим\source\repos\copyfileslab4\copyfileslab4\obj\Debug\copyfileslab4.csproj.SuggestedBindingRedirects.cache
+C:\Users\Максим\source\repos\copyfileslab4\copyfileslab4\obj\Debug\copyfileslab4.csproj.CoreCompileInputs.cache
+C:\Users\Максим\source\repos\copyfileslab4\copyfileslab4\obj\Debug\copyfileslab4.exe
+C:\Users\Максим\source\repos\copyfileslab4\copyfileslab4\obj\Debug\copyfileslab4.pdb
