@@ -16,6 +16,7 @@ namespace copyfileslab4
                 Console.WriteLine("You wrote less than 3 arguments");
                 Console.WriteLine("An example of the correct launch of the program: copyfileslab4.exe \"D:\\Documents\" \"D:\\Games\" \"*.txt\" \"*.pptx\"");
                 Console.WriteLine("Program execution did not complete successfully");
+                Environment.ExitCode = 1;
                 return;
             }
 
@@ -26,6 +27,7 @@ namespace copyfileslab4
             {
                 Console.WriteLine($"The folder {Folder1} from which we move the files doesn't exist");
                 Console.WriteLine("Program execution did not complete successfully");
+                Environment.ExitCode = 1;
                 return;
             }
 
@@ -33,6 +35,7 @@ namespace copyfileslab4
             {
                 Console.WriteLine($"The folder {Folder2} in which we move the filed doesn't exist");
                 Console.WriteLine("Program execution did not complete successfully");
+                Environment.ExitCode = 1;
                 return;
             }
 
@@ -47,7 +50,7 @@ namespace copyfileslab4
             foreach (string fileFormat in Formats)
             {
                 Console.WriteLine($"Move files to the selected folder {Folder2}");
-                foreach (string file in Directory.EnumerateFiles(Folder1, fileFormat))
+                foreach (string file in Directory.EnumerateFiles(Folder1, fileFormat, SearchOption.AllDirectories))
                 {
                     string fileName = Path.GetFileName(file);
                     string destFile = Path.Combine(Folder2, fileName);
@@ -57,6 +60,7 @@ namespace copyfileslab4
             }
             Console.WriteLine($"{filesMoved} files successfully moved to {Folder2}");
             Console.WriteLine("Program execution completed successfully");
+            Environment.ExitCode = 0;
         }
     }
 }
